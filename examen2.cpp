@@ -157,6 +157,7 @@ void informe2()
 		k++;
 		cont4;
 	}
+		cout << inv_total[0].desc;
 	//
 	/*for (i=0; i<cont4; i++)
 	{
