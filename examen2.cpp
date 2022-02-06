@@ -9,7 +9,7 @@ struct inv{
 	int cod_suc;
 	string cod_inv;
 	int capital;
-	string fecha;
+	int fecha;
 };
 
 inv inversiones[10000];
@@ -17,14 +17,6 @@ int cod_suc[10], cont1=0, cont2=0, cont3=0, i=0, x=0;
 string nomb_suc[10], portafolio[50][2];
 int main(int argc, char *argv[]) {
 	archivos();
-	//cout << inversiones[0].cod_suc;
-	/*for (i=0; i<cont3; i++)
-	{
-		
-		//cout << portafolio[i][0] << " " << portafolio[i][1] << endl;
-		//cout << inversiones[i].cod_suc << " " << inversiones[i].cod_inv << " " << inversiones[i].capital << " " << inversiones[i].fecha << endl;
-	}*/
-	//cout << cont2;
 	
 	return 0;
 	
