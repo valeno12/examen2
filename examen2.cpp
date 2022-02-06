@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
 		}
 		cout << endl;
 	}*/
-	//informe2();
+	informe2();
 	return 0;
 	
 }
@@ -140,10 +140,9 @@ void informe2()
 	int aux;
 	string aux1, aux2;
 	int k=0;
-	cout << portafolio[1][1] << endl;
-	for (i=0; i<cont2; i++)
+	for (i=0; i<cont2-1; i++)
 	{
-		for (int j=0; j<cont3; j++)
+		for (int j=0; j<cont3-1; j++)
 		{
 			if (inversiones[j].cod_inv == portafolio[i][0])
 			{
@@ -151,14 +150,11 @@ void informe2()
 				inv_total[k].cod = portafolio[i][0];
 				inv_total[k].desc = portafolio[i][1];
 				inv_total[k].monto += inversiones[j].capital;
-				cout << inv_total[0].desc << endl;
 			}
 		}
 		k++;
-		cont4;
+		cont4++;
 	}
-		cout << inv_total[0].desc;
-	//
 	/*for (i=0; i<cont4; i++)
 	{
 		for (int j=i+1; j<cont4; j++)
@@ -179,10 +175,10 @@ void informe2()
 			}
 		}
 	}*/
-	//cout << "Cod. Inv" << "          " << "Descripcion" << "        " << "monto" << endl;
-	for (i=0; i<cont4; i++)
+	cout << "Cod. Inv" << "          " << "Descripcion" << "        " << "monto" << endl;
+	for (i=0; i<cont4-1; i++)
 	{
-		//cout << inv_total[i].cod << "          " << inv_total[i].desc << "         " << inv_total[i].monto << endl;
+		cout << inv_total[i].cod << "          " << inv_total[i].desc << "         " << inv_total[i].monto << endl;
 		
 	}
 }
