@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -26,6 +25,7 @@ int main(int argc, char *argv[]) {
 		//cout << inversiones[i].cod_suc << " " << inversiones[i].cod_inv << " " << inversiones[i].capital << " " << inversiones[i].fecha << endl;
 	}*/
 	//cout << cont2;
+	
 	return 0;
 	
 }
@@ -91,18 +91,20 @@ void archivos()
 		}
 	}
 	archivo3.close();
-	cout << aux[0][0] << " " << aux[0][1] << " " << aux[0][2] << " " << aux[0][3];
-	/*for (i=0; i<cont3-1; i++)
+	for (i=0; i<cont3-1; i++)
 	{
 		inversiones[i].cod_suc = stoi (aux[i][0]);
 		inversiones[i].cod_inv = aux[i][1];
 		inversiones[i].capital = stoi (aux[i][2]);
-		//inversiones[i].fecha = convertir(aux[i][3]);
-		cout << aux[i][3] << endl;
-	}*/
+		inversiones[i].fecha = convertir(aux[i][3]);
+		//cout << inversiones[i].cod_suc  << " " << inversiones[i].cod_inv << " " << inversiones[i].capital << " " << inversiones[i].fecha << endl;
+		cout << inversiones[0].fecha;
+	}
 } 
 int convertir(string k)
 {
-	int x = stoi (k.substr(3,2));
+	string y = k.substr(3, 2);
+	int x = stoi ( y );
+	//cout << x << endl;
 	return x;
 }
