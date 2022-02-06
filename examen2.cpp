@@ -89,14 +89,11 @@ void archivos()
 		inversiones[i].cod_inv = aux[i][1];
 		inversiones[i].capital = stoi (aux[i][2]);
 		inversiones[i].fecha = convertir(aux[i][3]);
-		//cout << inversiones[i].cod_suc  << " " << inversiones[i].cod_inv << " " << inversiones[i].capital << " " << inversiones[i].fecha << endl;
-		cout << inversiones[0].fecha;
 	}
 } 
 int convertir(string k)
 {
 	string y = k.substr(3, 2);
 	int x = stoi ( y );
-	//cout << x << endl;
 	return x;
 }
